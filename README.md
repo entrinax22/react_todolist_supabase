@@ -1,54 +1,85 @@
-# React + TypeScript + Vite
+React To-Do List with Supabase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient to-do list application built with React and Supabase for backend services, developed just for fun.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+User authentication with Supabase
 
-## Expanding the ESLint configuration
+Create, update, and delete tasks
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Realtime synchronization of tasks
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Responsive design for mobile and desktop
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Frontend: React, Tailwind CSS
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Backend: Supabase (PostgreSQL, Authentication, Realtime)
+
+State Management: React Hooks
+
+Installation
+
+Prerequisites
+
+Node.js (Latest LTS recommended)
+
+Supabase account
+
+Steps
+
+Clone the repository
+
+git clone https://github.com/yourusername/react-todo-supabase.git
+cd react-todo-supabase
+
+Install dependencies
+
+npm install
+
+Set up environment variables
+
+Create a .env file in the root directory and add the following:
+
+REACT_APP_SUPABASE_URL=your-supabase-url
+REACT_APP_SUPABASE_ANON_KEY=your-anon-key
+
+Replace your-supabase-url and your-anon-key with your actual Supabase project credentials.
+
+Run the development server
+
+npm start
+
+Usage
+
+Sign up or log in using Supabase authentication.
+
+Add new tasks to the list.
+
+Mark tasks as completed or delete them.
+
+Tasks update in real-time across all devices.
+
+Deployment
+
+To deploy the application, you can use platforms like Vercel or Netlify.
+
+Build the app
+
+npm run build
+
+Deploy using Vercel
+
+npm install -g vercel
+vercel
+
+Contributing
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request.
+
+License
+
+This project is licensed under the MIT License.
+
