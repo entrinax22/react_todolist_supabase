@@ -25,7 +25,7 @@ A simple and efficient to-do list application built with React and Supabase for 
 
 1. **Clone the repository**
    ```sh
-   git clone https://github.com/yourusername/react-todo-supabase.git
+   git clone https://github.com/entrinax22/react_todolist_supabase.git
    cd react-todo-supabase
    ```
 
