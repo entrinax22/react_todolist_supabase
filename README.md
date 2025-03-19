@@ -1,85 +1,78 @@
-React To-Do List with Supabase
+# React To-Do List with Supabase
 
 A simple and efficient to-do list application built with React and Supabase for backend services, developed just for fun.
 
-Features
+## Features
 
-User authentication with Supabase
+- User authentication with Supabase
+- Create, update, and delete tasks
+- Realtime synchronization of tasks
+- Responsive design for mobile and desktop
 
-Create, update, and delete tasks
+## Tech Stack
 
-Realtime synchronization of tasks
+- **Frontend:** React, Tailwind CSS
+- **Backend:** Supabase (PostgreSQL, Authentication, Realtime)
+- **State Management:** React Hooks
 
-Responsive design for mobile and desktop
+## Installation
 
-Tech Stack
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- Supabase account
 
-Frontend: React, Tailwind CSS
+### Steps
 
-Backend: Supabase (PostgreSQL, Authentication, Realtime)
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/yourusername/react-todo-supabase.git
+   cd react-todo-supabase
+   ```
 
-State Management: React Hooks
+2. **Install dependencies**
+   ```sh
+   npm install
+   ```
 
-Installation
+3. **Set up environment variables**
+   - Create a `.env` file in the root directory and add the following:
+   ```sh
+   REACT_APP_SUPABASE_URL=your-supabase-url
+   REACT_APP_SUPABASE_ANON_KEY=your-anon-key
+   ```
+   - Replace `your-supabase-url` and `your-anon-key` with your actual Supabase project credentials.
 
-Prerequisites
+4. **Run the development server**
+   ```sh
+   npm start
+   ```
 
-Node.js (Latest LTS recommended)
+## Usage
 
-Supabase account
+1. Sign up or log in using Supabase authentication.
+2. Add new tasks to the list.
+3. Mark tasks as completed or delete them.
+4. Tasks update in real-time across all devices.
 
-Steps
-
-Clone the repository
-
-git clone https://github.com/yourusername/react-todo-supabase.git
-cd react-todo-supabase
-
-Install dependencies
-
-npm install
-
-Set up environment variables
-
-Create a .env file in the root directory and add the following:
-
-REACT_APP_SUPABASE_URL=your-supabase-url
-REACT_APP_SUPABASE_ANON_KEY=your-anon-key
-
-Replace your-supabase-url and your-anon-key with your actual Supabase project credentials.
-
-Run the development server
-
-npm start
-
-Usage
-
-Sign up or log in using Supabase authentication.
-
-Add new tasks to the list.
-
-Mark tasks as completed or delete them.
-
-Tasks update in real-time across all devices.
-
-Deployment
+## Deployment
 
 To deploy the application, you can use platforms like Vercel or Netlify.
 
-Build the app
+1. **Build the app**
+   ```sh
+   npm run build
+   ```
+2. **Deploy using Vercel**
+   ```sh
+   npm install -g vercel
+   vercel
+   ```
 
-npm run build
-
-Deploy using Vercel
-
-npm install -g vercel
-vercel
-
-Contributing
+## Contributing
 
 Contributions are welcome! Feel free to fork the repository and submit a pull request.
 
-License
+## License
 
 This project is licensed under the MIT License.
 
