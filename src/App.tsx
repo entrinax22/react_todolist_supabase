@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import supabase from './Supabase-client'
 import './App.css'
+
+
 function App() {
   const [name, setName] = useState('')
   const [task, setTask] = useState('')
